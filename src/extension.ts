@@ -12,8 +12,12 @@ export function activate(context: vscode.ExtensionContext) {
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("vstodo.askQuestion", () => {
-      vscode.window.showInformationMessage("How was your day?", "good", "bad");
+    vscode.commands.registerCommand("vstodo.askQuestion", async () => {
+      const answer = await vscode.window.showInformationMessage(
+        "How was your day?",
+        "good",
+        "bad"
+      );
     })
   );
 }
