@@ -128,24 +128,23 @@ export class HelloWorldPanel {
     //   vscode.Uri.joinPath(this._extensionUri, "out", "compiled/HelloWorld.js")
     // );
 
-    // Local path to css styles
-    // const styleResetPath = vscode.Uri.joinPath(
-    //   this._extensionUri,
-    //   "media",
-    //   "reset.css"
-    // );
-    // const stylesPathMainPath = vscode.Uri.joinPath(
-    //   this._extensionUri,
-    //   "media",
-    //   "vscode.css"
-    // );
 
     // Uri to load styles into webview
-    // const stylesResetUri = webview.asWebviewUri(styleResetPath);
-    // const stylesMainUri = webview.asWebviewUri(stylesPathMainPath);
-    // const cssUri = webview.asWebviewUri(
-    //   vscode.Uri.joinPath(this._extensionUri, "out", "compiled/HelloWorld.css")
-    // );
+    const stylesResetUri = webview.asWebviewUri(vscode.Uri.joinPath(
+      this._extensionUri,
+      "media",
+      "reset.css"
+    ));
+
+    const stylesMainUri = webview.asWebviewUri(vscode.Uri.joinPath(
+      this._extensionUri,
+      "media",
+      "vscode.css"
+    ));
+    
+    const cssUri = webview.asWebviewUri(
+      vscode.Uri.joinPath(this._extensionUri, "out", "compiled/HelloWorld.css")
+    );
 
     // // Use a nonce to only allow specific scripts to be run
     const nonce = getNonce();
@@ -167,6 +166,9 @@ export class HelloWorldPanel {
         </script>
 			</head>
       <body>
+      <h1>Hello World</h1>
+      <input/>
+      <button>Hello Button</button>
 			</body>
 			</html>`;
   }
