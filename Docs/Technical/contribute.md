@@ -18,3 +18,6 @@ Every time you make a change to the extension code, you need to reload the `[Ext
 To reload, you open the command pallette, `ctrl + shift +p` then you type `reload` then select the reload command.
 Alternatively, `ctrl + R`
 
+VS Code API documentation contains all the APIs you need to create an extension.
+<!-- Learn more from the VS Code APIs documentation: https://code.visualstudio.com/api/references/vscode-api -->
+
