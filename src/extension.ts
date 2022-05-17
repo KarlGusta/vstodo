@@ -22,7 +22,9 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(disposable);
 
 	vscode.commands.registerCommand('vstodo.askQuestion', () => {
-
+		// This is the logic that is going to be run
+		// Whenever this, vstodo.askQuestion, command gets called.
+		vscode.window.showInformationMessage("How was your day?");
 	});
 }
 
