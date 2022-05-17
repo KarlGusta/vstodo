@@ -24,7 +24,7 @@ export function activate(context: vscode.ExtensionContext) {
 	vscode.commands.registerCommand('vstodo.askQuestion', () => {
 		// This is the logic that is going to be run
 		// Whenever this, vstodo.askQuestion, command gets called.
-		vscode.window.showInformationMessage("How was your day?");
+		vscode.window.showInformationMessage("How was your day?", "good", "bad");
 	});
 }
 
