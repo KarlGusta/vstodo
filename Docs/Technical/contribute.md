@@ -56,5 +56,20 @@ I will add the command, askQuestion, to the package.json.
     }
 ```
 
+
+You can also add the, category, so that your commands can be identified to be in a group when searching for them.
+
+```json
+            {
+                "command": "vstodo.askQuestion",
+                "category": "VSTodo",
+                "title": "Ask Question"
+            }
+```
+
+Here is an example image: 
+
+
+
 The string in the command, should match what is in the extension. For example, `vstodo.AskQuestion`.
 
