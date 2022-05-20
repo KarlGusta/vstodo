@@ -20,6 +20,7 @@
             },
             {
                 "command": "vstodo.askQuestion",
+                "category": "VSTodo",
                 "title": "Ask Question"
             }
         ]
